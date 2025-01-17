@@ -1,0 +1,21 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "custom",
+    "description" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "e7215140-ccfc-11ef-a0a0-cbc7cb480c04"
+    },
+    "image" : null,
+    "name" : "Custom",
+    "order" : null,
+    "title" : "Custom"
+  },
+  "fqns" : [ "modem_state", "tabs" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

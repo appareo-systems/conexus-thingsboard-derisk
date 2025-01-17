@@ -1,0 +1,29 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : "",
+    "address2" : "",
+    "city" : "",
+    "country" : null,
+    "email" : "ldelaprade+thingsboard@appareo.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "3853c4a0-cc3d-11ef-83e0-cbc7cb480c04"
+    },
+    "name" : "APPAREO",
+    "phone" : "",
+    "state" : "",
+    "title" : "APPAREO",
+    "zip" : ""
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

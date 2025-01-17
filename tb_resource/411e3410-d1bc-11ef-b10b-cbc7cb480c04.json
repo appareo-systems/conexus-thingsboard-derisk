@@ -1,0 +1,40 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "data" : "PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBzdHlsZT0iZmlsbDojM0Q1MUNDOyIgZD0iTTAsMzEwLjkyNGMwLDAsNC4yMzgsNy45NDQsOS40MTYsMTcuNjU2YzUuMTc5LDkuNzEsMjEuNTk5LDE3LjY1NiwzNi40ODcsMTcuNjU2aDQyMC4xOTMKCWMxNC44OSwwLDMxLjMwOS03Ljk0NCwzNi40ODctMTcuNjU2UzUxMiwzMTAuOTI0LDUxMiwzMTAuOTI0SDB6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiM0QzdGRTE7IiBkPSJNNDAyLjM0MiwyNjAuNDg0SDEwOS42NThjLTQuNjYxLDAtOC40NC0zLjc3OC04LjQ0LTguNDRjMC00LjY2MiwzLjc3OS04LjQ0LDguNDQtOC40NGgyOTIuNjg0CgljNC42NjEsMCw4LjQ0LDMuNzc4LDguNDQsOC40NEM0MTAuNzgyLDI1Ni43MDcsNDA3LjAwMywyNjAuNDg0LDQwMi4zNDIsMjYwLjQ4NHoiLz4KPHBhdGggc3R5bGU9ImZpbGw6IzNENTFDQzsiIGQ9Ik0yNTYsMTEyLjQwNmMtMTAuMDIzLDQuNDktMTYuODc5LDEzLjU0OC0xNi44NzksMjQuMDAxdjExMy42OTVoMzMuNzU4VjEzNi40MDcKCUMyNzIuODc5LDEyNS45NTQsMjY2LjAyMywxMTYuODk2LDI1NiwxMTIuNDA2eiIvPgo8ZWxsaXBzZSBzdHlsZT0iZmlsbDojNUJBQ0Y1OyIgY3g9IjI1NiIgY3k9IjMwNS4wMzgiIHJ4PSI3Mi4wNTEiIHJ5PSI3OS42NDUiLz4KPGc+Cgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiMzNTMxODU7IiBjeD0iMzk5Ljk5IiBjeT0iMzcyLjkxNSIgcj0iMjYuNjc5Ii8+Cgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiMzNTMxODU7IiBjeD0iMTEyLjAxIiBjeT0iMzcyLjkxNSIgcj0iMjYuNjc5Ii8+CjwvZz4KPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0yODguODU5LDI4OS45MzdoLTY1LjcxOGMtNC42NjEsMC04LjQ0LTMuNzc4LTguNDQtOC40NHMzLjc3OS04LjQ0LDguNDQtOC40NGg2NS43MTgKCWM0LjY2MSwwLDguNDQsMy43NzgsOC40NCw4LjQ0UzI5My41MiwyODkuOTM3LDI4OC44NTksMjg5LjkzN3oiLz4KPC9zdmc+Cg==",
+    "descriptor" : {
+      "mediaType" : "image/svg+xml",
+      "width" : 512,
+      "height" : 512,
+      "size" : 1177,
+      "etag" : "b7d178c602fb9f1a68560297468111e76db2fd5f8324507c8cd5505fcc69ea9d",
+      "previewDescriptor" : {
+        "mediaType" : "image/svg+xml",
+        "width" : 512,
+        "height" : 512,
+        "size" : 1177,
+        "etag" : "b7d178c602fb9f1a68560297468111e76db2fd5f8324507c8cd5505fcc69ea9d"
+      }
+    },
+    "etag" : "b7d178c602fb9f1a68560297468111e76db2fd5f8324507c8cd5505fcc69ea9d",
+    "externalId" : null,
+    "fileName" : "logo.svg",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "411e3410-d1bc-11ef-b10b-cbc7cb480c04"
+    },
+    "link" : "/api/images/tenant/logo.svg",
+    "name" : "logo.svg",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/3nYi2rLRma9FYLpAe7RMBi1cvuo6RIy4",
+    "publicResourceKey" : "3nYi2rLRma9FYLpAe7RMBi1cvuo6RIy4",
+    "resourceKey" : "logo.svg",
+    "resourceType" : "IMAGE",
+    "title" : "logo.svg"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

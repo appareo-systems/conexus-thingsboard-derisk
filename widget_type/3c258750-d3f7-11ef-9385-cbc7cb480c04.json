@@ -1,0 +1,33 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "fqn" : "tabs",
+    "name" : "TABs",
+    "deprecated" : false,
+    "image" : null,
+    "description" : null,
+    "descriptor" : {
+      "type" : "static",
+      "sizeX" : 7.5,
+      "sizeY" : 3,
+      "resources" : [ ],
+      "templateHtml" : "<div id=\"state1\" class=\"state-content\">\n    <!-- Your State 1 content here -->\n</div>\n<div id=\"state2\" class=\"state-content\" style=\"display:none;\">\n    <!-- Your State 2 content here -->\n</div>\n<div id=\"state3\" class=\"state-content\" style=\"display:none;\">\n    <!-- Your State 3 content here -->\n</div>\n",
+      "templateCss" : "\n    .state-navigation {\n        display: flex;\n        gap: 10px;\n        background-color: #f0f0f0;\n        padding: 10px;\n    }\n    .state-btn {\n        padding: 10px 20px;\n        background-color: #007bff;\n        color: white;\n        border: none;\n        cursor: pointer;\n        border-radius: 5px;\n    }\n    .state-btn:hover {\n        background-color: #0056b3;\n    }\n    .active-state {\n        background-color: #28a745; /* Active state color */\n    }\n\n",
+      "controllerScript" : "self.onInit = function() {\n    var $injector = self.ctx.$scope.$injector;\n    var utils = $injector.get(self.ctx.servicesMap.get('utils'));\n\n    var cssParser = new cssjs();\n    cssParser.testMode = false;\n    var namespace = 'html-card-' + hashCode(self.ctx.settings.cardCss);\n    cssParser.cssPreviewNamespace = namespace;\n    cssParser.createStyleElement(namespace, self.ctx.settings.cardCss);\n    self.ctx.$container.addClass(namespace);\n    var evtFnPrefix = 'htmlCard_' + Math.abs(hashCode(self.ctx.settings.cardCss + self.ctx.settings.cardHtml + self.ctx.widget.id));\n    cardHtml =  '<div style=\"height:100%\" onclick=\"' + evtFnPrefix + '_onClickFn(event)\">' + \n                self.ctx.settings.cardHtml + \n                '</div>';\n    cardHtml = replaceCustomTranslations(cardHtml);\n    self.ctx.$container.html(cardHtml);\n\n    window[evtFnPrefix + '_onClickFn'] = function (event) {\n        self.ctx.actionsApi.elementClick(event);\n    }\n\n    function hashCode(str) {\n        var hash = 0;\n        var i, char;\n        if (str.length === 0) return hash;\n        for (i = 0; i < str.length; i++) {\n            char = str.charCodeAt(i);\n            hash = ((hash << 5) - hash) + char;\n            hash = hash & hash;\n        }\n        return hash;\n    }\n    \n    function replaceCustomTranslations (pattern) {\n        var customTranslationRegex = new RegExp('{i18n:[^{}]+}', 'g');\n        pattern = pattern.replace(customTranslationRegex, getTranslationText);\n        return pattern;\n    }\n    \n    function getTranslationText (variable) {\n        return utils.customTranslation(variable, variable);\n        \n    }\n\n    // Store references to all state sections\n    const states = {\n        state1: document.getElementById('state1'),\n        state2: document.getElementById('state2'),\n        state3: document.getElementById('state3'),\n        // Add more states as needed\n    };\n\n    function switchState(stateName) {\n        // Hide all states\n        for (let state in states) {\n            states[state].style.display = 'none';\n            // Remove active state class from all buttons\n            document.querySelector(`.state-btn[data-state=\"${state}\"]`).classList.remove('active-state');\n        }\n\n        // Show the selected state\n        states[stateName].style.display = 'block';\n        // Add active state class to the selected button\n        document.querySelector(`.state-btn[data-state=\"${stateName}\"]`).classList.add('active-state');\n    }\n    \n}\n\nself.actionSources = function() {\n    return {\n        'elementClick': {\n            name: 'widget-action.element-click',\n            multiple: true\n        }\n    };\n}\n\nself.onDestroy = function() {\n}\n\n\n\n\n",
+      "settingsSchema" : "",
+      "dataKeySettingsSchema" : "",
+      "settingsDirective" : "tb-html-card-widget-settings",
+      "defaultConfig" : "{\"datasources\":[{\"type\":\"static\",\"name\":\"function\",\"dataKeys\":[{\"name\":\"f(x)\",\"type\":\"function\",\"label\":\"Random\",\"color\":\"#2196f3\",\"settings\":{},\"_hash\":0.15479322438769105,\"funcBody\":\"var value = prevValue + Math.random() * 100 - 50;\\nvar multiplier = Math.pow(10, 2 || 0);\\nvar value = Math.round(value * multiplier) / multiplier;\\nif (value < -1000) {\\n\\tvalue = -1000;\\n} else if (value > 1000) {\\n\\tvalue = 1000;\\n}\\nreturn value;\"}]}],\"timewindow\":{\"realtime\":{\"timewindowMs\":60000}},\"showTitle\":false,\"backgroundColor\":\"rgb(255, 255, 255)\",\"color\":\"rgba(0, 0, 0, 0.87)\",\"padding\":\"8px\",\"settings\":{\"cardHtml\":\"<div class='card'>HTML code here</div>\",\"cardCss\":\".card {\\n    font-weight: bold;\\n    font-size: 32px;\\n    color: #999;\\n    width: 100%;\\n    height: 100%;\\n    display: flex;\\n    align-items: center;\\n    justify-content: center;\\n}\"},\"title\":\"TABs\",\"dropShadow\":true}"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "3c258750-d3f7-11ef-9385-cbc7cb480c04"
+    },
+    "tags" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
