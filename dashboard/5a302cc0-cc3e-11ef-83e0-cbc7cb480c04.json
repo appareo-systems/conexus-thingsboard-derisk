@@ -131,7 +131,10 @@
         "toolbarAlwaysOpen" : true
       }
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "5a302cc0-cc3e-11ef-83e0-cbc7cb480c04"
+    },
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "5a302cc0-cc3e-11ef-83e0-cbc7cb480c04"

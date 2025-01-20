@@ -1583,7 +1583,10 @@
         "dashboardCss" : ""
       }
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "25586320-cc0f-11ef-83e0-cbc7cb480c04"
+    },
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "25586320-cc0f-11ef-83e0-cbc7cb480c04"
