@@ -59,7 +59,7 @@
               "defaultPageSize" : 10,
               "defaultSortOrder" : "name",
               "useRowStyleFunction" : false,
-              "entitiesTitle" : "ACUs"
+              "entitiesTitle" : "Select device"
             },
             "title" : "Entities table",
             "dropShadow" : true,
@@ -110,7 +110,7 @@
             "titleIcon" : "list",
             "iconColor" : null,
             "titleFont" : null,
-            "titleColor" : null
+            "titleColor" : "#0000FF"
           },
           "row" : 0,
           "col" : 0,
@@ -1089,9 +1089,9 @@
             "padding" : "0px",
             "settings" : {
               "cardHtml" : "<button id=\"toHistory\">Show History</button>\n",
-              "cardCss" : "        #toHistory {\n            background-color: #4CAF50; /* Green background */\n            border: none; /* Remove borders */\n            color: white; /* White text */\n            padding: 0px 10px; /* Reduced padding */\n            text-align: center; /* Centered text */\n            text-decoration: none; /* Remove underline */\n            display: inline-block; /* Make the container inline */\n            font-size: 16px; /* Smaller font size */\n            margin: 4px 2px; /* Some margin */\n            cursor: pointer; /* Pointer/hand icon */\n            box-shadow: 0 9px #999; /* Add shadows */\n\n            float: right; /* Align to the right */\n        }\n\n        #toHistory:active {\n            background-color: #3e8e41; /* Darker green background */\n            box-shadow: 0 5px #666; /* Reduce shadow size */\n            transform: translateY(1px); /* Move the button down */\n        }"
+              "cardCss" : "        #toHistory {\n            background-color: #4CAF50; /* Green background */\n            border: none; /* Remove borders */\n            color: white; /* White text */\n            padding: 0px 10px; /* Reduced padding */\n            text-align: center; /* Centered text */\n            text-decoration: none; /* Remove underline */\n            display: inline-block; /* Make the container inline */\n            font-size: 16px; /* Smaller font size */\n            margin: 4px 2px; /* Some margin */\n            cursor: pointer; /* Pointer/hand icon */\n            box-shadow: 0 9px #999; /* Add shadows */\n            float: full; /* Align to the right */\n            transform: translateY(-4px);    \n            width: 100%; /* Full width */\n            transition: box-shadow 0.3s ease; /* Smooth transition */            \n        }\n\n        #toHistory:hover {\n           box-shadow: 0 0 20px 5px yellow; /* Glowing effect */\n        }\n\n        #toHistory:active {\n            background-color: #3e8e41; /* Darker green background */\n            box-shadow: 0 5px #666; /* Reduce shadow size */\n            transform: translateY(-5px); \n        }"
             },
-            "title" : "Dashboard pages",
+            "title" : "Navigation",
             "dropShadow" : true,
             "actions" : {
               "headerButton" : [ {
@@ -1160,7 +1160,8 @@
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
-            }
+            },
+            "titleColor" : "#0000FF"
           },
           "row" : 0,
           "col" : 0,
