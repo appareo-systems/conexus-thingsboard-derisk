@@ -58,15 +58,15 @@
         "type" : "DEFAULT"
       },
       "provisionConfiguration" : {
-        "type" : "DISABLED",
-        "provisionDeviceSecret" : null
+        "type" : "ALLOW_CREATE_NEW_DEVICES",
+        "provisionDeviceSecret" : "znp53jie9hlabg75rm5c"
       },
       "transportConfiguration" : {
         "type" : "DEFAULT"
       }
     },
-    "provisionDeviceKey" : null,
-    "provisionType" : "DISABLED",
+    "provisionDeviceKey" : "kvmw3434sl92ytl8y5jg",
+    "provisionType" : "ALLOW_CREATE_NEW_DEVICES",
     "softwareId" : null,
     "transportType" : "DEFAULT",
     "type" : "DEFAULT"

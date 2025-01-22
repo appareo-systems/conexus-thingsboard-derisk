@@ -1089,7 +1089,7 @@
             "padding" : "0px",
             "settings" : {
               "cardHtml" : "<button id=\"toHistory\">Show History</button>\n",
-              "cardCss" : "        #toHistory {\n            background-color: #4CAF50; /* Green background */\n            border: none; /* Remove borders */\n            color: white; /* White text */\n            padding: 0px 10px; /* Reduced padding */\n            text-align: center; /* Centered text */\n            text-decoration: none; /* Remove underline */\n            display: inline-block; /* Make the container inline */\n            font-size: 16px; /* Smaller font size */\n            margin: 4px 2px; /* Some margin */\n            cursor: pointer; /* Pointer/hand icon */\n            box-shadow: 0 9px #999; /* Add shadows */\n            float: full; /* Align to the right */\n            transform: translateY(-4px);    \n            width: 100%; /* Full width */\n            transition: box-shadow 0.3s ease; /* Smooth transition */            \n        }\n\n        #toHistory:hover {\n           box-shadow: 0 0 20px 5px yellow; /* Glowing effect */\n        }\n\n        #toHistory:active {\n            background-color: #3e8e41; /* Darker green background */\n            box-shadow: 0 5px #666; /* Reduce shadow size */\n            transform: translateY(-5px); \n        }"
+              "cardCss" : "        #toHistory {\n            background-color: #4CAF50; /* Green background */\n            border: none; /* Remove borders */\n            color: white; /* White text */\n            padding: 0px 10px; /* Reduced padding */\n            text-align: center; /* Centered text */\n            text-decoration: none; /* Remove underline */\n            display: inline-block; /* Make the container inline */\n            font-size: 16px; /* Smaller font size */\n            margin: 4px 2px; /* Some margin */\n            cursor: pointer; /* Pointer/hand icon */\n            box-shadow: 0 9px #999; /* Add shadows */\n            float: full; /* Align to the right */\n            transform: translateY(-4px);    \n            width: 100%; /* Full width */\n            transition: box-shadow 0.3s ease; /* Smooth transition */            \n        }\n\n        #toHistory:hover {\n           box-shadow: 1px 1px 1px 1px yellow; /* Glowing effect */\n        }\n\n        #toHistory:active {\n            background-color: #3e8e41; /* Darker green background */\n            box-shadow: 0 5px #666; /* Reduce shadow size */\n            transform: translateY(-5px); \n        }"
             },
             "title" : "Navigation",
             "dropShadow" : true,
@@ -1158,7 +1158,7 @@
             "showTitleIcon" : false,
             "titleTooltip" : "Select and click an icon to display the matching page",
             "titleStyle" : {
-              "fontSize" : "16px",
+              "fontSize" : "12px",
               "fontWeight" : 400
             },
             "titleColor" : "#0000FF"
@@ -1986,7 +1986,7 @@
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
-            "useDashboardTimewindow" : false,
+            "useDashboardTimewindow" : true,
             "displayTimewindow" : true,
             "decimals" : 0,
             "timewindowStyle" : {
