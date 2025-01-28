@@ -1,0 +1,28 @@
+version: '3.7'
+services:
+  cassandra:
+    image: cassandra:4.0
+    ports:
+      - "9042:9042"
+
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  thingsboard:
+    image: thingsboard/tb-cassandra:latest
+    ports:
+      - "9090:9090"
+      - "1883:1883"
+      - "5683:5683/udp"
+    env_file:
+      - tb-node.env
+    depends_on:
+      - cassandra
+      - kafka
